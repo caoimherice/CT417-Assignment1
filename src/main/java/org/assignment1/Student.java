@@ -1,6 +1,6 @@
 package org.assignment1;
 
-public class student {
+public class Student {
     public String getName() {
         return name;
     }
@@ -65,9 +65,10 @@ public class student {
     private String courses;
     private String modules;
 
-    public student(String name, int age){
+    public Student(String name, int age){
         this.name = name;
         this.age = age;
+        generateUsername();
     }
 
     private void generateUsername(){

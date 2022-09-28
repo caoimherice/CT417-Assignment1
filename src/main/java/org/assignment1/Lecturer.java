@@ -1,7 +1,10 @@
 package org.assignment1;
 
-public class lecturer {
-    public lecturer() {
+public class Lecturer {
+    public Lecturer(String name, int age) {
+        this.name = name;
+        this.age = age;
+        generateUsername();
     }
 
     public String getName() {
