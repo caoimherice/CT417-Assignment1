@@ -4,7 +4,7 @@ import org.joda.time.DateTime;
 
 import java.util.List;
 
-public class Programme {
+public class Course {
     public String getName() {
         return name;
     }
@@ -13,11 +13,11 @@ public class Programme {
         this.name = name;
     }
 
-    public List<String> getModules() {
+    public List<Module> getModules() {
         return modules;
     }
 
-    public void setModules(List<String> modules) {
+    public void setModules(List<Module> modules) {
         this.modules = modules;
     }
 
@@ -46,11 +46,11 @@ public class Programme {
     }
 
     private String name;
-    private List<String> modules;
+    private List<Module> modules;
     private List<String> students;
     private DateTime startDate;
     private DateTime endDate;
 
-    public Programme() {
+    public Course() {
     }
 }

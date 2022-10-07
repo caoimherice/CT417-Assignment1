@@ -19,11 +19,11 @@ public class Module {
         this.id = id;
     }
 
-    public List<String> getStudents() {
+    public List<Student> getStudents() {
         return students;
     }
 
-    public void setStudents(List<String> students) {
+    public void setStudents(List<Student> students) {
         this.students = students;
     }
 
@@ -35,19 +35,19 @@ public class Module {
         this.associatedCourses = associatedCourses;
     }
 
-    public String getLecturer() {
+    public Lecturer getLecturer() {
         return lecturer;
     }
 
-    public void setLecturer(String lecturer) {
+    public void setLecturer(Lecturer lecturer) {
         this.lecturer = lecturer;
     }
 
     private String name;
     private String id;
-    private List<String> students;
+    private List<Student> students;
     private List<String> associatedCourses;
-    private String lecturer;
+    private Lecturer lecturer;
 
     public Module() {
     }

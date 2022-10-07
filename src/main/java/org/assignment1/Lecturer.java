@@ -1,5 +1,7 @@
 package org.assignment1;
 
+import java.util.List;
+
 public class Lecturer {
     public Lecturer(String name, int age) {
         this.name = name;
@@ -47,11 +49,11 @@ public class Lecturer {
         this.username = username;
     }
 
-    public String getModulesTeaching() {
+    public List<Module> getModulesTeaching() {
         return modulesTeaching;
     }
 
-    public void setModulesTeaching(String modulesTeaching) {
+    public void setModulesTeaching(List<Module> modulesTeaching) {
         this.modulesTeaching = modulesTeaching;
     }
 
@@ -60,7 +62,7 @@ public class Lecturer {
     private String dob;
     private String id;
     private String username;
-    private String modulesTeaching;
+    private List<Module> modulesTeaching;
 
     private void generateUsername(){
         this.username = name + age;
