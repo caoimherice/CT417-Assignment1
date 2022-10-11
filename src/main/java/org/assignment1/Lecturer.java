@@ -70,7 +70,7 @@ public class Lecturer {
         this.username = name + age;
     }
 
-    private void addModuleTeaching(Module module){
+    public void addModuleTeaching(Module module){
         this.modulesTeaching.add(module);
     }
 }

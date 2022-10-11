@@ -79,11 +79,11 @@ public class Student {
         this.username = name + age;
     }
 
-    private void addCourses(Course course){
+    public void addCourses(Course course){
         this.courses.add(course);
     }
 
-    private void addModule(Module module){
+    public void addModule(Module module){
         this.modules.add(module);
     }
 }

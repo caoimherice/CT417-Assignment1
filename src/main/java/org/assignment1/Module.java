@@ -55,11 +55,11 @@ public class Module {
         this.lecturer = lecturer;
     }
 
-    private void addStudent(Student student){
+    public void addStudent(Student student){
         this.students.add(student);
     }
 
-    private void addCourse(Course course){
+    public void addCourse(Course course){
         this.associatedCourses.add(course);
     }
 }
