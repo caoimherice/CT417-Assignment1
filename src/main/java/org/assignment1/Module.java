@@ -27,11 +27,11 @@ public class Module {
         this.students = students;
     }
 
-    public List<String> getAssociatedCourses() {
+    public List<Course> getAssociatedCourses() {
         return associatedCourses;
     }
 
-    public void setAssociatedCourses(List<String> associatedCourses) {
+    public void setAssociatedCourses(List<Course> associatedCourses) {
         this.associatedCourses = associatedCourses;
     }
 
@@ -46,9 +46,20 @@ public class Module {
     private String name;
     private String id;
     private List<Student> students;
-    private List<String> associatedCourses;
+    private List<Course> associatedCourses;
     private Lecturer lecturer;
 
-    public Module() {
+    public Module(String name, String id, Lecturer lecturer) {
+        this.name = name;
+        this.id = id;
+        this.lecturer = lecturer;
+    }
+
+    private void addStudent(Student student){
+        this.students.add(student);
+    }
+
+    private void addCourse(Course course){
+        this.associatedCourses.add(course);
     }
 }

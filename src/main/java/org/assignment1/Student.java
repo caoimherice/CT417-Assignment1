@@ -67,13 +67,23 @@ public class Student {
     private List<Course> courses;
     private  List<Module> modules;
 
-    public Student(String name, int age){
+    public Student(String name, int age, String dob, String id){
         this.name = name;
         this.age = age;
+        this.dob = dob;
+        this.id = id;
         generateUsername();
     }
 
     private void generateUsername(){
         this.username = name + age;
+    }
+
+    private void addCourses(Course course){
+        this.courses.add(course);
+    }
+
+    private void addModule(Module module){
+        this.modules.add(module);
     }
 }

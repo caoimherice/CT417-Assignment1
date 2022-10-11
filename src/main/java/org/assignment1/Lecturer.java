@@ -3,9 +3,11 @@ package org.assignment1;
 import java.util.List;
 
 public class Lecturer {
-    public Lecturer(String name, int age) {
+    public Lecturer(String name, int age, String dob, String id) {
         this.name = name;
         this.age = age;
+        this.dob = dob;
+        this.id = id;
         generateUsername();
     }
 
@@ -66,5 +68,9 @@ public class Lecturer {
 
     private void generateUsername(){
         this.username = name + age;
+    }
+
+    private void addModuleTeaching(Module module){
+        this.modulesTeaching.add(module);
     }
 }
