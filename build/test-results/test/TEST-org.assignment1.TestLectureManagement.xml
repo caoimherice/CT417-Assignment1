@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.assignment1.TestLectureManagement" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-09-28T12:07:25" hostname="S031PC143" time="0.013">
+<testsuite name="org.assignment1.TestLectureManagement" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-10-14T14:51:23" hostname="S031PC143" time="0.015">
   <properties/>
-  <testcase name="testGenerateUsernameLecturer()" classname="org.assignment1.TestLectureManagement" time="0.012"/>
+  <testcase name="testGenerateUsernameLecturer()" classname="org.assignment1.TestLectureManagement" time="0.014"/>
   <testcase name="testGenerateUsernameStudent()" classname="org.assignment1.TestLectureManagement" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -1,8 +1,31 @@
 package org.assignment1;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class Module {
+
+    private String name;
+    private String id;
+    private ArrayList<Student> students;
+    private ArrayList<Course> associatedCourses;
+    private Lecturer lecturer;
+
+    public Module(String name, String id, Lecturer lecturer) {
+        this.name = name;
+        this.id = id;
+        this.lecturer = lecturer;
+        this.students = new ArrayList<Student>();
+        this.associatedCourses = new ArrayList<Course>();
+    }
+
+    public void addStudent(Student student){
+        this.students.add(student);
+    }
+
+    public void addCourse(Course course){
+        this.associatedCourses.add(course);
+    }
+
     public String getName() {
         return name;
     }
@@ -19,19 +42,19 @@ public class Module {
         this.id = id;
     }
 
-    public List<Student> getStudents() {
+    public ArrayList<Student> getStudents() {
         return students;
     }
 
-    public void setStudents(List<Student> students) {
+    public void setStudents(ArrayList<Student> students) {
         this.students = students;
     }
 
-    public List<Course> getAssociatedCourses() {
+    public ArrayList<Course> getAssociatedCourses() {
         return associatedCourses;
     }
 
-    public void setAssociatedCourses(List<Course> associatedCourses) {
+    public void setAssociatedCourses(ArrayList<Course> associatedCourses) {
         this.associatedCourses = associatedCourses;
     }
 
@@ -43,23 +66,4 @@ public class Module {
         this.lecturer = lecturer;
     }
 
-    private String name;
-    private String id;
-    private List<Student> students;
-    private List<Course> associatedCourses;
-    private Lecturer lecturer;
-
-    public Module(String name, String id, Lecturer lecturer) {
-        this.name = name;
-        this.id = id;
-        this.lecturer = lecturer;
-    }
-
-    public void addStudent(Student student){
-        this.students.add(student);
-    }
-
-    public void addCourse(Course course){
-        this.associatedCourses.add(course);
-    }
 }

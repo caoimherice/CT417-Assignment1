@@ -4,13 +4,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TestLectureManagement {
-    String name = "Caoimhe";
-    int age = 21;
-    String dob = "04/02/2001";
-    String id = "19408694";
 
-
-    Student student = new Student(name, age, dob, id);
+    Student student = new Student("Caoimhe", 21, "04/02/2001", "19408694");
     Lecturer lecturer = new Lecturer("John", 35, "02/03/1980", "12345678");
 
     public TestLectureManagement() {

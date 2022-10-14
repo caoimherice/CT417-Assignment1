@@ -1,14 +1,31 @@
 package org.assignment1;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class Lecturer {
+
+    private String name;
+    private int age;
+    private String dob;
+    private String id;
+    private String username;
+    private ArrayList<Module> modulesTeaching;
+
     public Lecturer(String name, int age, String dob, String id) {
         this.name = name;
         this.age = age;
         this.dob = dob;
         this.id = id;
+        this.modulesTeaching = new ArrayList<Module>();
         generateUsername();
+    }
+
+    private void generateUsername(){
+        this.username = name + age;
+    }
+
+    public void addModuleTeaching(Module module){
+        this.modulesTeaching.add(module);
     }
 
     public String getName() {
@@ -51,26 +68,12 @@ public class Lecturer {
         this.username = username;
     }
 
-    public List<Module> getModulesTeaching() {
+    public ArrayList<Module> getModulesTeaching() {
         return modulesTeaching;
     }
 
-    public void setModulesTeaching(List<Module> modulesTeaching) {
+    public void setModulesTeaching(ArrayList<Module> modulesTeaching) {
         this.modulesTeaching = modulesTeaching;
     }
 
-    private String name;
-    private int age;
-    private String dob;
-    private String id;
-    private String username;
-    private List<Module> modulesTeaching;
-
-    private void generateUsername(){
-        this.username = name + age;
-    }
-
-    public void addModuleTeaching(Module module){
-        this.modulesTeaching.add(module);
-    }
 }
