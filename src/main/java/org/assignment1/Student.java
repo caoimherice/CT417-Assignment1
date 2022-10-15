@@ -22,14 +22,17 @@ public class Student {
         generateUsername();
     }
 
+    // concatenating a students name and age to create their username
     private void generateUsername(){
         this.username = name + age;
     }
 
+    // adding a course to the list of courses a student is taking
     public void addCourses(Course course){
         this.courses.add(course);
     }
 
+    // adding a module to the list of modules a student is taking
     public void addModule(Module module) {
         this.modules.add(module);
     }

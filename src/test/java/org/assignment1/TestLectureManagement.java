@@ -11,11 +11,13 @@ public class TestLectureManagement {
     public TestLectureManagement() {
     }
 
+    // test to check if the generate username method in Student correctly concatenates their name and age to get their username
     @Test
     public void testGenerateUsernameStudent(){
         assertEquals("Caoimhe21", student.getUsername());
     }
 
+    // test to check if the generate username method in Lecturer correctly concatenates their name and age to get their username
     @Test
     public void testGenerateUsernameLecturer(){
         assertEquals("John35", lecturer.getUsername());

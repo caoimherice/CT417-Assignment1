@@ -18,10 +18,12 @@ public class Module {
         this.associatedCourses = new ArrayList<Course>();
     }
 
+    // adding a student to the list of students for a module
     public void addStudent(Student student){
         this.students.add(student);
     }
 
+    // adding a course to the list of courses a module is associated with
     public void addCourse(Course course){
         this.associatedCourses.add(course);
     }

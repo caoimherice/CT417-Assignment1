@@ -20,10 +20,12 @@ public class Course {
         this.students = new ArrayList<Student>();
     }
 
+    // adding a module to a course
     public void addModule(Module module){
         modules.add(module);
     }
 
+    // adding a student to a course
     public void addStudents(Student student){
         students.add(student);
     }

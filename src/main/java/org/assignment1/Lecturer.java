@@ -20,10 +20,12 @@ public class Lecturer {
         generateUsername();
     }
 
+    // concatenating a lecturer's name and age to get their username
     private void generateUsername(){
         this.username = name + age;
     }
 
+    // adding a module to the list of modules a lecturer is teaching
     public void addModuleTeaching(Module module){
         this.modulesTeaching.add(module);
     }
